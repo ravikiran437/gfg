@@ -2,7 +2,7 @@
 
 class Solution:
     def rremove (self, s):
-		def rec(s):
+	def rec(s):
             if len(s) == 1:
                 return s
             s += "@"
