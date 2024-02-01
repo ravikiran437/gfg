@@ -4,7 +4,6 @@ class Solution:
     # your task is to complete this function
     # function should return an integer
     def atoi(self,s):
-        # Code here
         c = 0
         d = 0
         if s[0] == "-":
@@ -22,6 +21,8 @@ class Solution:
                 return -abs(int(s))
             return int(s)
         return -1
+        
+            
 
 
 #{ 
