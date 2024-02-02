@@ -17,10 +17,15 @@ class Solution:
                 if s[i].isdigit():
                     c+=1 
         if c+d == len(s):
+            if d == 1:
+                return -abs(int(s))
             return int(s)
         return -1
         
             
+
+
+
 
 
 #{ 
