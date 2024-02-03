@@ -13,9 +13,9 @@ class Solution:
         MOD=10**9+7
         s = 0
         while head:
-            s = s*10+head.data
+            s = (s<<1)+head.data
             head = head.next
-        return int(str(s),2)%MOD
+        return s%MOD
 
 #{ 
  # Driver Code Starts
