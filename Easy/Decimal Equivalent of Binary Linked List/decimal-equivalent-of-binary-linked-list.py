@@ -11,11 +11,13 @@ class node:
 class Solution:
     def decimalValue(self, head):
         MOD=10**9+7
-        s = 0
+        c = 0
         while head:
-            s = (s<<1)+head.data
-            head = head.next
-        return s%MOD
+            c =  ((c << 1)%MOD+ head.data)%MOD
+            head = head.next 
+        return c
+            
+
 
 #{ 
  # Driver Code Starts
