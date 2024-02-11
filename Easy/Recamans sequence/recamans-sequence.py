@@ -10,12 +10,15 @@ class Solution:
             if k>0 and k not in s:
                 s.add(k)
                 l[i] = k
-            elif k > 0 and k not in s:
-                l[i] = l[i-1] + i 
             else:
                 l[i] = l[i-1] + i 
                 s.add(l[i-1]+i)
         return l
+        
+        
+
+
+
 
 
 #{ 
