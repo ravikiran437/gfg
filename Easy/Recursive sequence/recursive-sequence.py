@@ -2,7 +2,7 @@
 
 class Solution:
     def sequence(self, n):
-        # code 
+        # code here
         c = 0 
         m = 1
         s =set()
@@ -17,6 +17,7 @@ class Solution:
                 m = 1
                 c = 0 
         return l % mod
+
 
 
 #{ 
