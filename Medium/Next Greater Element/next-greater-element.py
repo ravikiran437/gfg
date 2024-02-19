@@ -4,27 +4,24 @@
 class Solution:
     def nextLargerElement(self,l,n):
         #code here
-        k = []
+        s = []
         arr = []
         for i in l[::-1]:
-            if k==[]:
-                k.append(i)
+            if s == []:
+                s.append(i)
                 arr.append(-1)
             else:
-                while len(k)!=0:
-                    if k[-1] <= i:
-                        k.pop()
-                    else:
-                        arr.append(k[-1])
-                        k.append(i)
+                while len(s) > 0 :
+                    if s[-1] > i:
+                        arr.append(s[-1])
+                        s.append(i)
                         break 
+                    else:
+                        s.pop()
                 else:
-                    k.append(i)
                     arr.append(-1)
+                    s.append(i)
         return arr[::-1]
-    
-
-
 #{ 
  # Driver Code Starts
 #Initial Template for Python 3
