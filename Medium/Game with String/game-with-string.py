@@ -1,25 +1,24 @@
 #User function Template for python3
+
 class Solution:
     def minValue(self, s, k):
-        # code here
-        #User function Template for python3
+        # code here\
         d = {}
         for i in s:
             if i not in d:
-                d[i] = 1 
+                d[i] = 1
             else:
                 d[i] += 1 
         l = list(d.values())
         l.sort()
-        while k!=0:
-            l[-1] -= 1 
-            k -= 1 
-            l.sort()
         c = 0 
+        while k > 0 :
+            l[-1] = l[-1] - 1 
+            k = k - 1 
+            l.sort()
         for i in l:
-            c = c + (i**2)
+            c += (i**2)
         return c
-            
 
 #{ 
  # Driver Code Starts
