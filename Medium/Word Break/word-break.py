@@ -2,6 +2,7 @@
 
 class Solution:
     def wordBreak(self, n, s, d):
+        # Complete this function
         if s == "":
             return 1 
         for i in d:
@@ -9,7 +10,6 @@ class Solution:
                 if self.wordBreak(n,s[len(i):],d):
                     return 1 
         return 0
-        # Complete this function
 
 
 #{ 
