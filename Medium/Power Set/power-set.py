@@ -12,8 +12,7 @@ class Solution:
 		    a.append(x)
 		a.sort()
 		return a
-		  
-		        
+
 
 #{ 
  # Driver Code Starts
