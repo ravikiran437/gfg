@@ -8,7 +8,6 @@ class Solution:
             k.append(arr[i]|arr[i+1])
         k.append(arr[n-1])
         return k
-            
 
 
 #{ 
