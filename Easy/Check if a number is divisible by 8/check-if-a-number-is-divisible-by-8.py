@@ -3,14 +3,11 @@
 class Solution:
     def DivisibleByEight(self,s):
         #code here
-        if len(s)<=3:
-            if int(s)%8 == 0:
-                return 1 
-            return -1
-        l = s[-3:]
-        if int(l)%8 == 0 :
+        s = "000"+s
+        if int(s[-3:])%8==0:
             return 1
         return -1
+
 
 #{ 
  # Driver Code Starts
