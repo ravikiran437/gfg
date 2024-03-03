@@ -3,8 +3,10 @@ class Solution:
 
 	def printLargest(self, n, arr):
 	    # code here
-	    A = sorted(arr,key=lambda x:str(x)*10,reverse=True)
-        return''.join([str(i)for i in A])
+	    a  = sorted(arr,key=lambda x:x*10,reverse=True)
+	    return "".join(a)
+	    
+	    
 
 
 
