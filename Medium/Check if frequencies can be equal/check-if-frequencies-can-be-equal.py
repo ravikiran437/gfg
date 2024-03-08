@@ -2,28 +2,26 @@
 class Solution:
     def sameFreq(self, s):
         # code here
-        d = {}
-        for i in s:
+        d ={}
+        for  i in s:
             if i not in d:
                 d[i] = 1 
             else:
                 d[i] += 1 
         l = list(d.values())
         if len(set(l)) == 1:
-            return 1 
-        i =  0 
-        while i<len(l):
-            l[i] = l[i] -1 
-            if l[i] == 0:
+            return 1
+        j = 0 
+        while j < len(l):
+            l[j] -= 1 
+            if l[j] == 0 :
                 if len(set(l)) == 2:
                     return 1
             if len(set(l)) == 1:
-                return 1
-            l[i] = l[i] + 1
-            i += 1 
+                return 1 
+            l[j] += 1 
+            j += 1
         return 0
-
-
 
 
 #{ 
