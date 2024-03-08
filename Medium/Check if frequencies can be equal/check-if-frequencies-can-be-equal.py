@@ -14,11 +14,17 @@ class Solution:
         i =  0 
         while i<len(l):
             l[i] = l[i] -1 
+            if l[i] == 0:
+                if len(set(l)) == 2:
+                    return 1
             if len(set(l)) == 1:
                 return 1
             l[i] = l[i] + 1
             i += 1 
         return 0
+
+
+
 
 #{ 
  # Driver Code Starts
