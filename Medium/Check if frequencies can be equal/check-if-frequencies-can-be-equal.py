@@ -1,34 +1,24 @@
 #User function Template for python3
 class Solution:
     def sameFreq(self, s):
-        if s == "aaabbbcccdd":
-            return 0
-        if s == "aabbbccddd":
-            return 0
+        # code here
         d = {}
         for i in s:
-            if  i not in d:
+            if i not in d:
                 d[i] = 1 
             else:
                 d[i] += 1 
         l = list(d.values())
-        ones = l.count(1)
-        s =list(set(l))
-        if len(s) == 1:
-            return 1
-        elif len(s) == 2:
-            if (s[0] == 1 or s[1] == 1) and ones == 1:
+        if len(set(l)) == 1:
+            return 1 
+        i =  0 
+        while i<len(l):
+            l[i] = l[i] -1 
+            if len(set(l)) == 1:
                 return 1
-            elif abs(s[0]-s[1]) == 1 :
-                return 1
-            else:
-                return 0
+            l[i] = l[i] + 1
+            i += 1 
         return 0
-    
-        
-
-
-
 
 #{ 
  # Driver Code Starts
