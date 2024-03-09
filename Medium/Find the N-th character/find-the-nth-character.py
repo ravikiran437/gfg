@@ -2,7 +2,7 @@
 
 class Solution:
     def nthCharacter(self, s, r, n):
-        # code here\
+        # code here
         def rec(s,c,r):
             if c >= r:
                 return s
@@ -28,6 +28,7 @@ class Solution:
             if len(t)>n:
                 return t[n]
         return t[n]
+
 
 #{ 
  # Driver Code Starts
