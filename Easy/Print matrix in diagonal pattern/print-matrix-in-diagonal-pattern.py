@@ -16,7 +16,6 @@ class Solution:
             l1 += k[i] 
         return l1
 
-
 #{ 
  # Driver Code Starts
 # Driver Program
