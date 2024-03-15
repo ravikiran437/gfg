@@ -8,21 +8,22 @@ class Node:
 
 
 class Solution:
-    def sort(self, head):
+    def sort(self, h1):
         #return head
-        l= []
-        while head:
-            l.append(head.data)
-            head = head.next 
-        l.sort()
-        ll = Node(l[0])
+        k = []
+        while h1:
+            k.append(h1.data)
+            h1 = h1.next 
+        k.sort()
+        ll = Node(k[0])
         t = ll 
-        for i in l[1:]:
+        for i in k[1:]:
             nn = Node(i)
             t.next = nn 
-            t  = nn 
+            t = nn 
         return ll
-        
+            
+
 
 
 #{ 
