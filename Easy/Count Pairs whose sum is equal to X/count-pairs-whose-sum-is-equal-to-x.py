@@ -30,12 +30,12 @@ class LinkedList:
 # } Driver Code Ends
 #User function Template for python3
 
-'''
+
 class Node:
     def __init__(self, data):   # data -> value stored in node
         self.data = data
         self.next = None
-'''
+
 class Solution:
     def countPair(self, head1, head2, n1, n2, x):
         l1 ,l2 = set(),set()
@@ -45,15 +45,12 @@ class Solution:
         while head2:
             l2.add(head2.data)
             head2 = head2.next
-        c = 0
+        c = 0 
         for i in l1:
-            sub = x - i
+            sub = x - i 
             if sub in l2:
-                c +=  1
-                l2.remove(sub)
+                c += 1 
         return c
-    
-
 #{ 
  # Driver Code Starts.
 if __name__ == '__main__':
