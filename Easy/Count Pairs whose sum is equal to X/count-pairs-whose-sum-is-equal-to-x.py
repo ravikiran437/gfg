@@ -38,18 +38,16 @@ class Node:
 
 class Solution:
     def countPair(self, head1, head2, n1, n2, x):
-        l1 ,l2 = set(),set()
+        l1 = set()
         while head1:
             l1.add(head1.data)
             head1 = head1.next 
-        while head2:
-            l2.add(head2.data)
-            head2 = head2.next
         c = 0 
-        for i in l1:
-            sub = x - i 
-            if sub in l2:
-                c += 1 
+        while head2:
+            sub  = x - head2.data 
+            if sub in l1:
+                c += 1
+            head2 = head2.next
         return c
 #{ 
  # Driver Code Starts.
