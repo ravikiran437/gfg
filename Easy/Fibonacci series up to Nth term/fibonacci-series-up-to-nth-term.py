@@ -2,19 +2,16 @@
 
 class Solution:
     def series(self, n):
-        # Code here
-        a = 0 
-        b = 1 
-        m = (10**9)+7
+        # Code her
+        a,b = 0,1
         l = [a,b]
+        m = (10**9)+7
         for i in range(n-1):
-            c = (a%m + b%m)%m
+            c = (a%m+b%m)%m
             l.append(c)
             a = b%m
-            b = c%m 
+            b = c%m
         return l
-        
-            
 
 
 #{ 
