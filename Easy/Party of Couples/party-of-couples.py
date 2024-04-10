@@ -5,7 +5,7 @@ class Solution:
         # code here
         x = 0
         for i in arr:
-            x = x^i 
+            x ^= i 
         return x
 
 
