@@ -10,6 +10,9 @@ class Solution:
         for i in range(1,len(b)):
             p += str(int(p[-1])^int(b[i]))
         return int(p,2)
+
+
+
 #{ 
  # Driver Code Starts
 #Initial Template for Python 3
