@@ -1,7 +1,7 @@
 #User function Template for python3
 
 class Solution:
-    def reversedBits(self, X):
+    def reversedBits(self, x):
         a=(bin(X)[2:])
         b=32-len(a)
         k=""
@@ -10,10 +10,7 @@ class Solution:
         k=k+a
         s=k[::-1]
         return int(s,2)
-        
-
-
-
+        # code here 
 
 
 #{ 
