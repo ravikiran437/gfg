@@ -1,17 +1,15 @@
 #User function Template for python3
 
-from collections import OrderedDict
-class Solution:
-    def findMissing(self,A,B,n,m):
-        l1 = []
-        B = set(B)
-        for i in A:
-            if i not in B:
-                l1.append(i)
-        return l1
-                
-        
 
+class Solution:
+    def findMissing(self,a,b,n,m):
+        
+        k = []
+        s = set(b)
+        for i in a:
+            if i not in s:
+                k.append(i)
+        return k
 
 
 #{ 
