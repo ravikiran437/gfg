@@ -4,10 +4,11 @@ class Solution:
     
     #Function to return a list containing the union of the two arrays.
     def findUnion(self,arr1,arr2,n,m):
-        k = set(arr1).union(set(arr2))
-        l = list(k)
-        l.sort()
-        return l
+        rk = set(arr1).union(set(arr2))
+        am = list(rk)
+        am.sort()
+        return am
+        # code here 
 
 
 #{ 
