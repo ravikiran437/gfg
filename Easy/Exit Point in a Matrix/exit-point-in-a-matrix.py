@@ -2,7 +2,9 @@
 
 class Solution:
 	def FindExitPoint(self, n, m, mat):
-		# Code here
+		# unblock cheyaku 
+		# chusthan apdhu varuku cheyavo 
+		# unblock chesthe bagodhu 
 		i = 0 
         j = 0
         k = []
