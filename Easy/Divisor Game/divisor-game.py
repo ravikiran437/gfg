@@ -7,9 +7,11 @@
 
 class Solution:
     def divisorGame(self, n):
-        #Code here
+        # kavalani ane  gah matladatledhu 
+        # chusthan enni rojulooooooo amrutha
         if n%2==0:
             return 1
+        return 0
 
 #{ 
  # Driver Code Starts.
