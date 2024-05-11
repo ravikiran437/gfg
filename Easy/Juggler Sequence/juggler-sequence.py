@@ -1,5 +1,4 @@
 #User function Template for python3
-
 class Solution:
     def jugglerSequence(self, n):
         # code here
@@ -12,6 +11,7 @@ class Solution:
                 k.append(int(k[-1]**(3/2)))
             c =c + 1
         return k
+
 
 
 #{ 
