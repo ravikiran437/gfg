@@ -28,6 +28,8 @@ class Solution:
                     a.append(j)
                 c += 1
         return a
+
+
 #{ 
  # Driver Code Starts
 #Initial Template for Python 3
