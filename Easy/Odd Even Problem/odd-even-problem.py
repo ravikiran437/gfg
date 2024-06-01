@@ -2,32 +2,25 @@
 class Solution:
     def oddEven(self, s : str) -> str:
         # code here
-        dic = {}
-        for i in range(97, 123):
-            dic[chr(i)] = i-96
-        d = {}
+        d=  {}
         for i in s:
-            if i not in d:
-                d[i] = 1
+            if  i not in d:
+                d[i] = 1 
             else:
-                d[i] += 1
-                
-        e = []
-        o = []
-        for i in s:
-            if dic[i] % 2 == 0 and d[i] % 2 == 0 and i not in e:
-                e.append(i)
-            elif dic[i] % 2 != 0 and d[i] % 2 != 0 and i not in o:
-                o.append(i)
-                
-        if (len(e)+len(o)) % 2:
-            return "ODD"
-        else:
-            return "EVEN"
-
-
-
-
+                d[i] += 1 
+        cnt = 0 
+        for i,j in d.items():
+            c = ord(i)-96 
+            if d[i]%2 == 0 and c%2 == 0 :
+                cnt += 1 
+            if d[i]%2 == 1 and c%2==1:
+                cnt += 1 
+        if cnt %2 == 0:
+            return "EVEN" 
+        return "ODD"
+            
+    
+            
 
 
 #{ 
