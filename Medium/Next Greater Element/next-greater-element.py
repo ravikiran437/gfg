@@ -2,26 +2,33 @@
 
 
 class Solution:
-    def nextLargerElement(self,l,n):
+    def nextLargerElement(self,arr,n):
         #code here
-        s = []
-        arr = []
-        for i in l[::-1]:
-            if s == []:
-                s.append(i)
-                arr.append(-1)
+        l = []
+        res = []
+        for i in arr[::-1]:
+            if l == []:
+                l.append(i)
+                res.append(-1)
             else:
-                while len(s) > 0 :
-                    if s[-1] > i:
-                        arr.append(s[-1])
-                        s.append(i)
-                        break 
+                while l!=[]:
+                    if l[-1] <= i:
+                        l.pop()
                     else:
-                        s.pop()
+                        res.append(l[-1])
+                        l.append(i)
+                        break 
                 else:
-                    arr.append(-1)
-                    s.append(i)
-        return arr[::-1]
+                    res.append(-1)
+                    l.append(i)
+        return res[::-1]
+                
+                #User function Template for python3
+
+    
+
+
+
 #{ 
  # Driver Code Starts
 #Initial Template for Python 3
