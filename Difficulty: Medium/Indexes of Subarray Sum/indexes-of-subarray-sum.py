@@ -8,27 +8,22 @@
 
 #Function to find a continuous sub-array which adds up to a given number.
 class Solution:
-    def subArraySum(self, nums, s, n): 
-        c = 0
-        start = 0
+    def subArraySum(self,arr, n, s):
+        c = 0 
+        start = 0 
         d = 0
-        for end in range(s):
-            c += nums[end]
-            
-            while c > n and start <= end:
-                c -= nums[start]
-                start += 1
+        for i in range(n):
+            c += arr[i]
+            while c > s and start <= i:
+                c -= arr[start]
+                start += 1 
                 d += 1
-            
-            if c == n and d!=end+1:
-                return [start + 1, end + 1]
-                
+            if c == s and i+1!= d:
+                return [start+1,i+1]
         return [-1]
-                    
-        
-        
-            
-
+       
+       
+       
 
 #{ 
  # Driver Code Starts.
