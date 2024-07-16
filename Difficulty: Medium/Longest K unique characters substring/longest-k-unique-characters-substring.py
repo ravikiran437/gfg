@@ -28,9 +28,7 @@ class Solution:
             return len(s)
         pp = max(pp,len(s)-m)
         return pp
-            
         
-
 
 #{ 
  # Driver Code Starts
