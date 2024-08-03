@@ -7,12 +7,9 @@ class Solution:
         for i in arr:
             c += i 
             l.append(i)
-            if c > x:
-                m = min(m,len(l))
-                while c > x and l:
-                    c -= l.pop(0)
-                    if  c > x:
-                        m = min(m,len(l))
+            while c > x and l:
+                m= min(len(l),m)
+                c -= l.pop(0)
         if m == 10**5:
             return 0 
         return m
