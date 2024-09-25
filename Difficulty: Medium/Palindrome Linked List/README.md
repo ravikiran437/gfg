@@ -1,4 +1,4 @@
-<h2><a href="https://www.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1?page=1&category=Linked%20List&sortBy=submissions">Palindrome Linked List</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given a singly linked list of integers. The task is to check if the given linked list is palindrome or not.</span></p>
+<h2><a href="https://www.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1">Palindrome Linked List</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given a singly linked list of integers. The task is to check if the given linked list is palindrome or not.</span></p>
 <p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
 <pre><span style="font-size: 18px;"><strong>Input: </strong>LinkedList: 1-&gt;2-&gt;1-&gt;1-&gt;2-&gt;1
 <strong>Output: </strong>true<strong>
