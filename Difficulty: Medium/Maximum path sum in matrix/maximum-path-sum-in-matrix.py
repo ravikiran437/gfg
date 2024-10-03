@@ -1,5 +1,4 @@
 #User function Template for python3
-#User function Template for python3
 
 class Solution:
     def maximumPath(self, n,mat):
@@ -19,7 +18,6 @@ class Solution:
                     m = max(m,mat[i-1][j+1])
                     mat[i][j] += m 
         return max(mat[-1])
-
 #{ 
  # Driver Code Starts
 #Initial Template for Python 3
