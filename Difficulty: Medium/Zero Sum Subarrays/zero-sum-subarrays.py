@@ -3,18 +3,17 @@
 class Solution:
     #Function to count subarrays with sum equal to 0.
     def findSubArrays(self,arr,n):
-        
+        d  ={0:1}
         #return: count of sub-arrays having their sum equal to 0
-        d = {0:[-1]}
-        c = 0
         count = 0 
-        for i in range(len(arr)):
-            c += arr[i]
-            if c not in d:
-                d[c] = [i]
+        pre = 0 
+        for i in arr:
+            pre += i 
+            if pre in d:
+                count += d[pre]
+                d[pre] += 1 
             else:
-                count += len(d[c])
-                d[c].append(i)
+                d[pre] = 1 
         return count
 
 
