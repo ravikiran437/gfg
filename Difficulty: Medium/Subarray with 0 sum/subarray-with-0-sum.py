@@ -3,17 +3,17 @@
 class Solution:
     
     #Function to check whether there is a subarray present with 0-sum or not.
-    def subArrayExists(self,l,n):
+    def subArrayExists(self,arr,n):
         ##Your code here
         #Return true or false
         d = {0:1}
-        c = 0
-        for i in l:
-            c += i 
-            if c in d:
+        pre = 0 
+        for i in arr:
+            pre += i 
+            if pre in d:
                 return 1
             else:
-                d[c] = 1
+                d[pre] = 1 
         return 0
 
 
