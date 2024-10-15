@@ -5,38 +5,27 @@
 # } Driver Code Ends
 #User function Template for python3
 
-
-
-
 class Solution:
     
     #Complete this fuction
     #Function to count the number of subarrays which adds to the given sum.
     def subArraySum(self,arr, tar):
-        sum = 0  # To store the cumulative sum
-        count = 0  # To store the count of subarrays that sum to the target
-        mp = {}  # Dictionary to store the frequency of cumulative sums
-    
-        # Iterate through the array
-        for i in range(len(arr)):
-            sum += arr[i]  # Add the current element to the cumulative sum
-    
-            # If the cumulative sum equals the target, increment count
-            if sum == tar:
+        #Your code here
+        count = 0 
+        d = {}
+        s = 0 
+        for i in arr:
+            s += i 
+            if s == tar:
                 count += 1
-    
-            # If (sum - target) exists in the dictionary, it means there is
-            # a subarray that sums to the target, so increment count by its frequency
-            if (sum - tar) in mp:
-                count += mp[sum - tar]
-    
-            # Store the current cumulative sum in the dictionary or update its frequency
-            if sum in mp:
-                mp[sum] += 1
+            if s-tar in d:
+                count += d[s-tar]
+            if s in d:
+                d[s] += 1 
             else:
-                mp[sum] = 1
-    
+                d[s] = 1 
         return count
+            
 
 #{ 
  # Driver Code Starts.
