@@ -1,17 +1,15 @@
 #User function Template for python3
 class Solution:
     def setMatrixZeroes(self, mat):
-        r = set()
-        c = set()
+        rows,cols = set(),set()
         for i in range(len(mat)):
             for j in range(len(mat[0])):
                 if mat[i][j] == 0:
-                    r.add(i)
-                    c.add(j)
-        # print(s)
+                    rows.add(i)
+                    cols.add(j)
         for i in range(len(mat)):
             for j in range(len(mat[0])):
-                if i in  r or j in c:
+                if  i in rows or j in cols:
                     mat[i][j] = 0 
         return mat
         
