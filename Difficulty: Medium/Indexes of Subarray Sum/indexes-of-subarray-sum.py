@@ -1,14 +1,6 @@
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
-
-# } Driver Code Ends
 #User function Template for python3
-#User function Template for python3
-
-#Function to find a continuous sub-array which adds up to a given number.
 class Solution:
-    def subArraySum(self,l, n, s):
+    def subarraySum(self, l, s):
         d = {}
         c = 0 
         for i in range(len(l)):
@@ -22,37 +14,22 @@ class Solution:
             if c not in d:
                 d[c] = i 
         return [-1]
-            
-       
-       
-       
+        # code here
+
 
 #{ 
- # Driver Code Starts.
-#Initial Template for Python 3
+ # Driver Code Starts
+# Initial Template for Python 3
 
-import math
+if __name__ == '__main__':
+    tc = int(input().strip())
+    while tc > 0:
+        arr = list(map(int, input().strip().split()))
+        d = int(input().strip())
+        ob = Solution()
+        result = ob.subarraySum(arr, d)
+        print(" ".join(map(str, result)))
+        tc -= 1
+        print("~")
 
-def main():
-        T=int(input())
-        while(T>0):
-            
-            NS=input().strip().split()
-            N=int(NS[0])
-            S=int(NS[1])
-            
-            A=list(map(int,input().split()))
-            ob=Solution()
-            ans=ob.subArraySum(A, N, S)
-            
-            for i in ans:
-                print(i, end=" ")
-                
-            print()
-            
-            T-=1
-
-
-if __name__ == "__main__":
-    main()
 # } Driver Code Ends
