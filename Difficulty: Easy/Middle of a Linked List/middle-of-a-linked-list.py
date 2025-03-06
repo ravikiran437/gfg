@@ -11,7 +11,7 @@ class Solution:
     def getMiddle(self, head):
         # Code here
         # return the value stored in the middle node
-        slow = head
+        slow = head 
         fast = head
         while fast and fast.next:
             slow = slow.next 
@@ -71,5 +71,6 @@ if __name__ == '__main__':
             list1.insert(i)
         ob = Solution()
         print(ob.getMiddle(list1.head))
+        print("~")
 
 # } Driver Code Ends
