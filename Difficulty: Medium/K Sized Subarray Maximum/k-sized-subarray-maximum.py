@@ -1,12 +1,10 @@
-#User function Template for python3
 from collections import deque
 class Solution:
-    
-    #Function to find maximum of each subarray of size k.
-    def max_of_subarrays(self,arr,n,k):
+    def maxOfSubarrays(self, arr, k):
+        # code here
         q = deque()
         l = []
-        for i in range(n):
+        for i in range(len(arr)):
             if q and q[0] < i-k+1:
                 q.popleft()
             while q and arr[q[-1]] < arr[i]:
@@ -31,20 +29,21 @@ input = iter(_INPUT_LINES).__next__
 _OUTPUT_BUFFER = io.StringIO()
 sys.stdout = _OUTPUT_BUFFER
 
-@atexit.register
 
+@atexit.register
 def write():
     sys.__stdout__.write(_OUTPUT_BUFFER.getvalue())
 
 
 if __name__ == '__main__':
     test_cases = int(input())
-    for cases in range(test_cases) :
-        n,k = map(int,input().strip().split())
-        arr = list(map(int,input().strip().split()))
-        ob=Solution()
-        res = ob.max_of_subarrays(arr,n,k)
-        for i in range (len (res)):
-            print (res[i], end = " ")
+    for cases in range(test_cases):
+        arr = list(map(int, input().strip().split()))
+        k = int(input())
+        ob = Solution()
+        res = ob.maxOfSubarrays(arr, k)
+        for i in range(len(res)):
+            print(res[i], end=" ")
         print()
+        print("~")
 # } Driver Code Ends
