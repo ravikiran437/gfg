@@ -1,15 +1,14 @@
 '''
 class Node:
-    def __init__(self,val):
+    def __init__(self, val):
         self.data = val
         self.left = None
         self.right = None
 '''
 
-from collections import deque
 class Solution:
-    #Function to store the zig zag order traversal of tree in a list.
     def zigZagTraversal(self, root):
+        # code here
         if not root:
             return []
             
