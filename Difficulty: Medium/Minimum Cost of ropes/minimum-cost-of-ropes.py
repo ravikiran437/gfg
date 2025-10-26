@@ -1,5 +1,5 @@
 
-import heapq
+import bisect
 class Solution:
    def minCost(self, arr):
        
@@ -12,5 +12,3 @@ class Solution:
            total_cost += c 
            heapq.heappush(arr,c)
        return total_cost
-        
-           
